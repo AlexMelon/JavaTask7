@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 20%;
+            float: left;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+        main {
+            margin-left: 22%;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Tutorial Documentation</h1>
+        <p>Learn the fundamentals of CSS for web design and development.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#syntax">CSS Syntax</a></li>
+            <li><a href="#selectors">CSS Selectors</a></li>
+            <li><a href="#properties">Common CSS Properties</a></li>
+            <li><a href="#example">CSS Example</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML.
+                It controls the layout, colors, fonts, and overall design of a webpage.
+            </p>
+        </section>
+
+        <section id="syntax">
+            <h2>CSS Syntax</h2>
+            <p>The basic syntax of CSS consists of selectors, properties, and values:</p>
+            <code>
+                selector {<br>
+                &nbsp;&nbsp;property: value;<br>
+                }
+            </code>
+            <p>Example:</p>
+            <code>
+                body {<br>
+                &nbsp;&nbsp;background-color: lightblue;<br>
+                }
+            </code>
+        </section>
+
+        <section id="selectors">
+            <h2>CSS Selectors</h2>
+            <p>CSS selectors are used to select the HTML elements to style. Common selectors include:</p>
+            <ul>
+                <li><strong>Universal Selector</strong>: <code>* { margin: 0; }</code></li>
+                <li><strong>Element Selector</strong>: <code>p { font-size: 16px; }</code></li>
+                <li><strong>Class Selector</strong>: <code>.className { color: red; }</code></li>
+                <li><strong>ID Selector</strong>: <code>#idName { text-align: center; }</code></li>
+            </ul>
+        </section>
+
+        <section id="properties">
+            <h2>Common CSS Properties</h2>
+            <p>Here are some frequently used CSS properties:</p>
+            <ul>
+                <li><strong>color</strong>: Sets the text color.</li>
+                <li><strong>background-color</strong>: Sets the background color of an element.</li>
+                <li><strong>margin</strong>: Sets the outer space of an element.</li>
+                <li><strong>padding</strong>: Sets the inner space of an element.</li>
+                <li><strong>border</strong>: Sets the border of an element.</li>
+            </ul>
+        </section>
+
+        <section id="example">
+            <h2>CSS Example</h2>
+            <p>Here is a simple example of CSS styling:</p>
+            <code>
+                h1 {<br>
+                &nbsp;&nbsp;color: blue;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }<br>
+                p {<br>
+                &nbsp;&nbsp;font-size: 18px;<br>
+                &nbsp;&nbsp;line-height: 1.5;<br>
+                }
+            </code>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CSS Tutorial Documentation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
